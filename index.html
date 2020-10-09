@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+
+	<style>
+		html{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; max-width: 1440px; max-height: 800px; }
+		*{padding: 0;margin: 0;outline: none;-webkit-appearance: none;font-family: 'Lato', sans-serif;box-sizing: border-box;}
+		a,button{ -webkit-appearance: none; outline: none; border: 0; text-decoration: none; cursor: pointer; }
+		.container-wrapper{position: relative;display: flex;height: 100%;}
+		.section-1{flex-basis: 70%;}
+		.section-2{flex-basis: 30%;background-color: #F7F7FA;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);padding: 40px 5px;flex: 1 1 auto;}
+		.payment-deatils{margin-top: 100px;display: flex;justify-content: center;}
+		.payment-note { color: #4990E2; font-size: 12px; font-weight: bold; letter-spacing: 0; line-height: 15px; }
+		.common-textstyle{color: #030303; font-size: 13px; font-weight: bold; letter-spacing: 0; line-height: 20px;}
+		.details-wrapper{position: relative;max-width: 650px;background-color: #fff;border-radius: 2px 2px 0 0;background-color: #FFFFFF;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);padding:15px 30px;margin:10px auto;overflow: hidden;display: flex;flex-wrap: wrap;}
+		.label-text {font-size: 12px;color: rgba(49,68,81,0.7);}
+		.cmn-block { padding: 10px; padding-right: 30px; margin: 10px 0; }
+		.cmn-block hr{margin:20px 0}
+		.details-group-1 { flex-basis: 25%;margin-top: 15px;}
+		.details-group-2 { flex-basis: 75%; }
+
+		.personal-details {display: flex;justify-content: space-between;flex-wrap: wrap;}
+		.download-policy { padding: 12px 20px; background-color: #FC5846; color: #FFFFFF; margin-bottom: 10px; transition:all 0.1s ease-in-out;}
+		.download-policy:hover { transform: scale(0.98); }
+
+		.section-2 >h4 { color: #314451; text-align: center;  margin-bottom: 15px; }
+		.contact-details { display: flex; flex-wrap: wrap; justify-content: space-evenly; color: #314451; font-size: 14px; font-weight: bold; letter-spacing: 0; line-height: 17px; }
+		.section-2 a {color: #314451;}
+
+		.icons{
+			font-size:18px;
+			margin-right: 8px;
+		}
+		.icons-margin{margin-bottom: -7px}
+		.policy-icon>img{width: 100px; margin-top: 20px}
+		.payment-success-icon{font-size: 50px;color: #59C6C5;margin-right: 10px;}
+
+		@media only screen and (max-width:900px) {
+			.container-wrapper{flex-wrap: wrap;}
+			.section-1{flex-basis: 100%;}
+			.section-2{flex-basis: 100%;}
+
+			.contact-details{text-align: center;}
+			.contact-details a{ flex-basis: 100%;margin-bottom: 10px;}
+
+
+
+		}
+
+		@media only screen and (max-width:450px) {
+			.payment-deatils{display: block;text-align: center;}
+			.section-2{display: none;}
+			.details-group-1{flex-basis: 100%;}
+			.details-group-2{flex-basis: 100%;}
+			.details-wrapper{text-align: center;}
+			.payment-note{display: block;}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="container-wrapper">
+		<div class="section-1">
+			<div class="payment-deatils">
+				<span class="fa fa-check-circle payment-success-icon"></span>
+				
+				<div>
+					<p class="common-textstyle">Payment Successful</p>
+					<span class="label-text">TRANSATION ID:CFOX87733</span>
+
+					<span><a href="/" class="payment-note">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="icons-margin">
+							<g fill="none" fill-rule="evenodd">
+								<polygon points="0 0 24 0 24 24 0 24"/>
+								<path fill="#4A90E2" fill-rule="nonzero" d="M19,9 L15,9 L15,3 L9,3 L9,9 L5,9 L12,16 L19,9 Z M5,18 L5,20 L19,20 L19,18 L5,18 Z"/>
+							</g>
+						</svg>
+					PAYMENT NOTE</a></span>
+				</div>
+
+			</div>
+			<div class="details-wrapper">
+				<div class="details-group-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 34 34" class="icons-margin">
+						<path fill="#030303" fill-opacity=".32" d="M11.5 16.875C12.0624198 16.875 12.7242305 16.9250691 13.4324745 17.0250748L13.4329287 20.7648297C13.4329287 21.874923 13.6197048 22.967506 13.9634505 24.0003525L2 24 2 21.625C2 18.46625 8.329375 16.875 11.5 16.875zM11.5 5C14.124375 5 16.25 7.125625 16.25 9.75 16.25 12.374375 14.124375 14.5 11.5 14.5 8.875625 14.5 6.75 12.374375 6.75 9.75 6.75 7.125625 8.875625 5 11.5 5zM24.3636364 10L33.3636364 14 33.3636364 20C33.3636364 25.55 29.5236364 30.74 24.3636364 32 19.2036364 30.74 15.3636364 25.55 15.3636364 20L15.3636364 20 15.3636364 14 24.3636364 10zM29.2756318 16.1140069L22.3647364 22.8832 1.5182351 20.0800759 17.9747209 21.6477378 22.3616386 25.9670811 30.8151946 17.6855496 29.2756318 16.1140069z"/>
+					</svg><span class="label-text">PA COVER</span>
+					<div class="policy-icon">
+						<img src="assests/bharti-axa-Gen.png">
+					</div>
+				</div>
+				<div class="details-group-2">
+					<div class="cmn-block">
+						<p class="common-textstyle">Bharti AXA Personal Accident Cover</p>
+					</div>
+
+					<div class="cmn-block personal-details">
+						<div>
+							<span class="label-text">Insured Name</span>
+							<p class="common-textstyle">Amrendra Bahubali</p>
+						</div>
+
+						<div>
+							<span class="label-text">Application Number</span>
+							<p class="common-textstyle">2016201510000002101</p>
+						</div>
+					</div>
+
+					<div class="cmn-block">
+						<button type="button" href="/" class="download-policy" download>DOWNLOAD POLICY</button>
+						<p class="label-text">We will also send your policy on your email address.</p>
+					</div>
+
+					<div class="cmn-block">
+						<hr>
+						<p class="label-text"><strong>Note: </strong>Only Digital copy of the policy will be issued. This is the original policy
+						document valid for all purposes.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="section-2">
+			<h4>CONTACT OUR CUSTOMER SERVICE UNIT</h4>
+			<div class="contact-details">
+				<a title="Email" href="mailto:help@coverfox.com" target="_blank"><span class="fa fa-envelope icons"></span>help@coverfox.com</a>
+				<a title="1800 209 9970" href="tel:1800 209 9970" target="_blank"><span class="fa fa-phone icons"></span>Toll Free: 1800 209 9970</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
