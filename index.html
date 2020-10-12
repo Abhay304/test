@@ -29,7 +29,6 @@
 		.section-2 >h4 { color: #314451; text-align: center;  margin-bottom: 15px; }
 		.contact-details { display: flex; flex-wrap: wrap; justify-content: space-evenly; color: #314451; font-size: 14px; font-weight: bold; letter-spacing: 0; line-height: 17px; }
 		.section-2 a {color: #314451;}
-
 		.icons{font-size:18px;margin-right: 8px;}
 		.icons-margin{margin-bottom: -7px}
 		.policy-icon>img{width: 100px; margin-top: 20px}
@@ -40,20 +39,22 @@
 			.container-wrapper{flex-wrap: wrap;}
 			.section-1{flex-basis: 100%;}
 			.section-2{flex-basis: 100%;}
+
 			.contact-details{text-align: center;}
 			.contact-details a{ flex-basis: 100%;margin-bottom: 10px;}
 		}
 
-		@media only screen and (max-width:450px) {
+		@media only screen and (max-width:460px) {
 			.payment-deatils{display: block;text-align: center;}
 			.section-2{display: none;}
 			.details-group-1{flex-basis: 100%;}
 			.details-group-2{flex-basis: 100%;}
-			.details-wrapper{text-align: center;}
+			.details-wrapper{max-width: 370px;}
 			.payment-note{display: block;}
 			.personal-details{display: block;}
 			.payment-success-icon{margin-right: 0px;}
 			.details{margin-top: 5px;}
+			.details-wrapper{width: 100%; border-radius: 5px;}
 		}
 
 	</style>
